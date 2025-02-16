@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>YSZ Studio – Contact</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body class="d-flex flex-column min-vh-100">
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid px-4">
+        <a class="navbar-brand fs-4 d-flex align-items-center gap-2" href="index.html">
+            <img src="images/logo.png" alt="Logo" width="100" />
+            YSZ Studio
+        </a>
+        <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#mainNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav ms-auto fs-5">
+                <li class="nav-item me-3"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item me-3"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                <li class="nav-item me-3"><a class="nav-link" href="pricing.html">Pricing</a></li>
+                <li class="nav-item me-3"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item me-3"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+            <a href="book.html" class="btn btn-danger">Book Now</a>
+        </div>
+    </div>
+</nav>
+<main class="flex-fill">
+<div class="container my-5">
+    <h1>Book</h1>
+    <p>
+        Contact us directly at
+        <a href="mailto:xxx@xmail.com">xxx@xmail.com</a>
+        or 111-111-1111
+    </p>
+    <p>
+        we are dedicated to providing exceptional photography services that capture your most cherished moments with creativity and professionalism.
+        Our team ensures a seamless and enjoyable experience, delivering high-quality images that you'll treasure for a lifetime.
+    </p>
+
+    <div class="row mt-4">
+        <div class="col-md-6">
+            <!-- Example event or studio image -->
+            <img src="images/showcase1.JPEG" alt="Event Picture" class="img-fluid" />
+        </div>
+        <div class="col-md-6">
+            <!-- The booking form -->
+            <form id="bookingForm" action="confirmation.html" method="GET">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" id="name" name="name" class="form-control" required />
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" id="email" name="email" class="form-control" required />
+                </div>
+                <div class="mb-3">
+                    <label for="phone" class="form-label">Phone number</label>
+                    <input type="text" id="phone" name="phone" class="form-control" />
+                </div>
+                <div class="mb-3">
+                    <label for="datetime" class="form-label">Date &amp; Time</label>
+                    <input type="text" id="datetime" name="datetime" class="form-control" />
+                </div>
+                <div class="mb-3">
+                    <label for="location" class="form-label">Location</label>
+                    <input type="text" id="location" name="location" class="form-control" />
+                </div>
+                <div class="mb-3">
+                    <label for="eventDescription" class="form-label">Event Description</label>
+                    <textarea
+                            id="eventDescription"
+                            name="eventDescription"
+                            class="form-control"
+                            rows="3">
+            </textarea>
+                </div>
+
+                <button type="submit" class="btn btn-danger d-block mx-auto">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
+    </main>
+
+<!-- Footer -->
+<footer class="bg-light text-center py-3">
+    <p class="mb-0">&copy; 2025 YSZ Studio</p>
+</footer>
+
+<script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
+</script>
+<script src="js/script.js"></script>
+</body>
+</html>

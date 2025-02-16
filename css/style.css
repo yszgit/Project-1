@@ -1,0 +1,147 @@
+/* -----------------------------------------------------------
+   style.css
+   -----------------------------------------------------------
+   A single CSS file providing consistent styling for all pages:
+   - Basic reset and global styles
+   - Hero section (Home)
+   - Navbar link highlights
+   - Cards, images
+   - Footer
+   - Minor form tweaks
+   ----------------------------------------------------------- */
+
+/* 1) Basic Global Reset & Typography */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: fantasy, cursive, sans-serif;
+    font-size: 80px; /* 也可改为 6rem 等 */
+    text-align: center; /* 居中 */
+    margin-top: 1rem;
+}
+
+    html, body {
+    /* Ensure the page takes up full available height */
+    width: 100%;
+    height: 100%;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+
+}
+
+/* 2) Hero Section (on Home Page) */
+.hero-section {
+    /* Use any large hero image in your images/ folder */
+    background: url('../images/hero.jpg') no-repeat center center;
+    background-size: cover;
+    height: 70vh; /* Adjust as you like (60vh, 80vh, etc.) */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* A subtle overlay if you need better text contrast (optional) */
+    position: relative;
+}
+
+/* Dark overlay example (optional) */
+.hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5); /* half-transparent black */
+    z-index: 1; /* position behind text but above background image */
+}
+
+.hero-section .text-center {
+    position: relative;
+    z-index: 2; /* ensures text is above the overlay */
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.7); /* optional text shadow */
+    padding: 1rem;
+}
+
+/* 3) Navbar Styles */
+
+
+
+/* Slightly bolder brand name/logo */
+.navbar-brand {
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+/* Adjust spacing around brand logo text if desired */
+.navbar-brand img {
+    margin-right: 8px;
+}
+
+/* Highlight an active nav link (the page you’re currently on) */
+.nav-link.active {
+    font-weight: bold;
+    color:#000; !important; /* override bootstrap’s link color if needed */
+}
+
+
+/* 4) Sections & Common Layout Helpers */
+
+/* A bit more vertical spacing for top-level sections if desired */
+section {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+/* Ensure images are responsive and nicely rounded corners if you like */
+img.img-fluid {
+    border-radius: 4px;
+}
+
+/* 5) Cards (for Gallery, Pricing, etc.) */
+
+/* Example: unify card headings or text if you want a certain style */
+.card h5.card-title {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+    font-weight: bold;
+}
+
+/* 6) Footer Styles */
+footer {
+    background-color: #f8f9fa; /* a light gray from Bootstrap palette */
+}
+
+footer p {
+    margin: 0;
+}
+
+/* 7) Form Tweaks (Contact Page) */
+
+/* Extra spacing in form controls */
+.form-control {
+    padding: 0.75rem 1rem;
+}
+
+/* Button styling for the contact form (optional override) */
+.btn-primary {
+    background-color: #007bff; /* default bootstrap color */
+    border: none;
+}
+
+
+
+
+.hero-section .display-3,
+.hero-section .lead,
+.hero-section a.btn {
+    color: #fff;
+}
+
+.hero-section::before {
+    background: rgba(0, 0, 0, 0.4); /* or 0.6, etc. */
+}
+
